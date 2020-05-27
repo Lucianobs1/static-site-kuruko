@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 :root{
   --h1-color: #394A78;
@@ -22,17 +24,18 @@ p{
 }
 
 body{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #141823;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 header{
-  max-width: 1146px;
-  margin-top: 70px;
-  margin-bottom: 50px;
-  margin-left: 148px;
+  max-width:1440px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+header nav{
+  margin-top: 80px;
 }
 
 header ul {
@@ -68,8 +71,10 @@ header ul li a:hover::after{
 
 /* Menu principal */
 
+
 .cards{
-  max-width: 1146px;
+  max-width: 1440px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
@@ -97,7 +102,7 @@ header ul li a:hover::after{
 .image-article .redes-sociais{
   position: absolute;
   text-align: center;
-  left: 18%;
+  left: 13%;
 }
 
 .image-article .redes-sociais p {
@@ -107,8 +112,8 @@ header ul li a:hover::after{
 footer{
    text-align: center;
    background-color: #2f4da0;
+   margin-top: 32px;
    width: 100%;
-   position: absolute;
    bottom: 0;
    left: 0;
    right: 0;
@@ -116,6 +121,7 @@ footer{
 
 footer p {
   padding: 18px;
+  font-size: 18px;
   font-weight: 600;
 }
 
