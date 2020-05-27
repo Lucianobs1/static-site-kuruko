@@ -4,6 +4,8 @@
 :root{
   --h1-color: #394A78;
   --p-color: #DFDFDF;
+  --primary-color: #7159c1;
+  --secondary-color: #d68d1e;
 }
 
 /* Configurações globais */
@@ -29,9 +31,11 @@ body{
 }
 
 header{
-  max-width:1440px;
-  margin: 0 auto;
+  width: 100%;
   font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 48px;
 }
 
 header nav{
@@ -41,6 +45,8 @@ header nav{
 header ul {
   display: flex;
   list-style: none;
+  align-items: center;
+  justify-content: center;
 }
 
 header ul li{
@@ -53,6 +59,9 @@ header ul li a{
   color: aliceblue;
 }
 
+.active{
+  color:rgb(24, 190, 255);
+}
 
 header ul li a::after{
   content: "";
@@ -71,17 +80,11 @@ header ul li a:hover::after{
 
 /* Menu principal */
 
-
 .cards{
-  max-width: 1440px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-top: 50px;
-}
-
-.cards p{
+  max-width: 1440px;
+  margin: 0 auto;
   margin-top: 16px;
 }
 
@@ -109,14 +112,56 @@ header ul li a:hover::after{
   padding-bottom: 16px;
 }
 
-footer{
+/* Videos */
+.videos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 880px;
+  margin: 0 auto;
+  margin-top: 50px;
+  gap: 16px;
+}
+
+.video{
+  background-color: var(--primary-color);
+}
+
+.video_image-container img{
+  width: 100%;
+
+}
+
+.video h3{
+  color: white;
+  text-align: center;
+}
+
+.video_content,
+.video_info {
+  padding: 24px;
+}
+
+.video_info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.video_duration{
+  background-color: var(--primary-color);
+  filter: brightness(90%);
+  padding: 5px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+footer{ 
+   position: absolute;
    text-align: center;
    background-color: #2f4da0;
    margin-top: 32px;
    width: 100%;
    bottom: 0;
-   left: 0;
-   right: 0;
 }
 
 footer p {

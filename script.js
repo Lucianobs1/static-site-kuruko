@@ -1,10 +1,9 @@
-currentPage = document.location.pathname
-
-menuItems = document.querySelectorAll("header ul li a");
+const currentPage = document.location.pathname;
+const menuItems = document.querySelectorAll("header a")
 
 for(item of menuItems){
   if(currentPage.includes(item.getAttribute("href"))){
-    item.classList.add("active")
+    item.classList.add("active");
   }
 }
 
